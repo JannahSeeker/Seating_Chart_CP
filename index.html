@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>find My Seat</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <title>find My Seat</title>
+    <link rel="icon" href="tigerr.png" type="image/png">
+
+    <link rel="stylesheet" href="base.css">
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+
+</head>
+
+<body id="body">
+
+
+
+    <body ontouchmove="BlockMove(event);">
+    </body>
+
+    <section id="landingpage">
+        <section id="text__holder">
+            <div class="section_search" id="text_bubble">
+                <div class="section_search_text" id="text">
+                    <h1 style="color: white; font-size: 175%;">
+                        find My Seat💺
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <section id="tiger_holder">
+            <img src="tigerr.png">
+
+        </section>
+        <section id="text_holder" style="display: flex; flex-direction: column; height: fit-content;">
+            <div class="section_search" id="edi_text_bubble">
+                <div class="section_search_text" id="text">
+                    <h1 style="color: rgba(127, 250, 116, 0.863); font-size: 165%;">
+                        Cy-Park <strike style="color: rgb(105, 82, 60);">Edition</strike> 🤫
+                    </h1>
+                </div>
+            </div>
+            <div class="section_search" id="test_text">
+                <div class="section_search_text" style="display: block; text-align: center;">
+                    <h1
+                        style="color: rgba(234, 255, 141, 0.89); font-size: 165%; word-wrap: break-word; white-space: normal; margin-top: 0; margin-bottom: 0;">
+                        Search seats by name, view seating chart, and find friends!
+                    </h1>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="button_text_holder" onclick="removeLandingPageOnTouch()">
+            <div class="section_search" id="button_text_bubble">
+                <div class="section_search_text" id="text">
+                    <h1 style="color: lightcoral; font-size: 175%;">
+                        continue 🤝
+                    </h1>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script>
+        function removeLandingPageOnTouch() {
+            var landingPageElement = document.getElementById("landingpage");
+            if (landingPageElement) {
+                landingPageElement.remove();
+            }
+            document.getElementById("body").webkitRequestFullscreen();
+            if (document.getElementById("body").webkitEnterFullscreen()) {
+                document.getElementById("body").webkitEnterFullscreen();
+            }
+            document.getElementById("body").webkitEnterFullscreen();
+            var bodyElement = document.body;
+            if (bodyElement.webkitRequestFullscreen) { // Check if the method is supported
+                bodyElement.addEventListener('touchstart', requestFullScreenHandler, false); // Listen for touch event
+            }
+        }
+
+        function requestFullScreenHandler(event) {
+            var bodyElement = document.body;
+            if (bodyElement.webkitRequestFullscreen) { // Check if the method is supported
+                bodyElement.webkitRequestFullscreen(); // Request fullscreen mode
+            }
+        }
+
+        // window.onload = function() {
+        //     var buttonHolder = document.getElementById("button_text_holder");
+        //     buttonHolder.addEventListener("onclick", removeLandingPageOnTouch);
+        // };
+    </script>
+    <section class="section_letter_1" id="section_letter_bar">
+        <div class="section_name" id="name_section_b">
+            <h1>Section B</h1>
+        </div>
+        <div class="section_name" id="name_section_a">
+            <h1>Section A</h1>
+        </div>
+        <div id="custom_margin">
+            Y
+        </div>
+
+        <!-- <button id="fullscreen-button" onclick="requestFullscreen()">fullscreen</button> -->
+
+    </section>
+
+    <section class="section_map_numbers" id="section_row_numbers">
+        <div class="mapped_sections_numbers" id="section_B_numbers">
+            <div class="rows_section_number" id="row_my_1">
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">16</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">15</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">14</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">13</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">12</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">11</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">10</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">9</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">8</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">7</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">6</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">5</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">4</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">3</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">2</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">1</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mapped_sections_numbers" id="section_A_numbers">
+            <div class="rows_section_number" id="row_my_1">
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">16</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">15</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">14</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">13</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">12</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">11</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">10</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">9</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">8</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">7</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">6</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">5</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">4</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">3</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">2</div>
+                </div>
+                <div class="seats_section_numbers">
+                    <div class="initial_text_sec">1</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section_map" id="section_map">
+        <div class="mapped_sections" id="section_B">
+            <div class="rows" id="row_1">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_2">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_3">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_4">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_5">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_6">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_7">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_8">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_9">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_10">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_11">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_12">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_13">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_14">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_15">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_16">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_17">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_18">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_19">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_20">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_21">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_22">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_23">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+
+
+        </div>
+        <div class="mapped_column_numbers">
+
+
+            <div class="rows_column" id="row_1_mapped">
+                <div class="seats_column">
+                    <div class="initial_text_column">1</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">2</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">3</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">4</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">5</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">6</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">7</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">8</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">9</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">10</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">11</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">12</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">13</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">14</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">15</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">16</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">17</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">18</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">19</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">20</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">21</div>
+                </div>
+            </div>
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">22</div>
+                </div>
+            </div>
+
+            <div class="rows_column">
+                <div class="seats_column">
+                    <div class="initial_text_column">23</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mapped_sections" id="section_A">
+            <div class="rows" id="row_1">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_2">
+                <div class="seats" id="seat_16">
+
+                </div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_3">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_4">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_5">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_6">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_7">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_8">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_9">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_10">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_11">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_12">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_13">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_14">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_15">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_16">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_17">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_18">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_19">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_20">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_21">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_22">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+            <div class="rows" id="row_23">
+                <div class="seats" id="seat_16"></div>
+                <div class="seats" id="seat_15"></div>
+                <div class="seats" id="seat_14"></div>
+                <div class="seats" id="seat_13"></div>
+                <div class="seats" id="seat_12"></div>
+                <div class="seats" id="seat_11"></div>
+                <div class="seats" id="seat_10"></div>
+                <div class="seats" id="seat_9"></div>
+                <div class="seats" id="seat_8"></div>
+                <div class="seats" id="seat_7"></div>
+                <div class="seats" id="seat_6"></div>
+                <div class="seats" id="seat_5"></div>
+                <div class="seats" id="seat_4"></div>
+                <div class="seats" id="seat_3"></div>
+                <div class="seats" id="seat_2"></div>
+                <div class="seats" id="seat_1"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="section_search_holder" id="search_holder">
+        <div class="holder_div" id="holder_div" style="opacity: .05;">
+            <input class="section_search_input" id="search_bar_input" type="text" placeholder="🍌Slide Away..🍌">
+        </div>
+        <div id="holder_results_div" style="opacity: .05;">
+            <div class="search_results" id="search_results">
+                <section class="section_search_name">
+                    Type a name🙏...
+                </section>
+            </div>
+        </div>
+
+        <section class="section_search" onclick="morphSectionSearchHolder()" id="search_bar">
+            <div class="section_search_text">
+                <h1>
+                    Click a Seat or tap me🥹
+                </h1>
+            </div>
+            <div id="search_icon">
+                <img class="search-img" src="search.png">
+
+            </div>
+
+
+        </section>
+    </section>
+
+
+    <script>
+
+        var actual_search_bar = document.getElementById("search_bar_input")
+        var searchBar = document.getElementById('search_bar');
+        // document.getElementById("search_holder").removeChild(actual_search_bar)
+        function unmorphSectionSearchHolderandclick(section_letter, row_number, seat_number) {
+            document.getElementById("holder_div").removeChild(actual_search_bar)
+            document.getElementById("search_holder").appendChild(searchBar)
+            document.getElementById("holder_results_div").style.opacity = .05
+            document.getElementById("holder_div").style.opacity = .05
+            // document.getElementById("search_holder").removeChild(document.getElementById("holder_results_div"))
+            document.getElementById('search_holder').classList.remove('morphed');
+
+            document.getElementById('body').removeChild(document.getElementById('exitbutton'))
+            const parentDiv = document.getElementById(`section_${section_letter.toUpperCase()}`);
+
+            // Access the child node by its ID
+            const childNode = parentDiv.querySelector(`#row_${row_number}`);
+
+            // Access the grandchild node by its ID
+            const grandchildNode = childNode.querySelector(`#seat_${seat_number}`);
+            console.log(section_letter)
+            console.log(row_number)
+            console.log(seat_number)
+
+            // Trigger a click event on the grandchild element
+
+            // if (parseInt(row_number) < 18) {
+            //     grandchildNode.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            // } else {
+            //     grandchildNode.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            //     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            // }
+
+
+            if (parseInt(row_number) < 12) {
+                console.log("Scrolling to very top")
+                // grandchildNode.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                grandchildNode.parentNode.parentNode.parentNode.parentNode.scrollTop = 0;
+
+            } else {
+                grandchildNode.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                grandchildNode.parentNode.parentNode.parentNode.parentNode.scrollTop = window.innerHeight;
+
+            }
+
+
+            if (section_letter === 'A') {
+                grandchildNode.parentNode.parentNode.parentNode.scrollLeft = window.innerWidth;
+
+                // Scroll to the left
+            } else {
+                // Scroll to the right
+                grandchildNode.parentNode.parentNode.parentNode.scrollLeft = 0; // Scroll to the start
+
+            }
+
+            grandchildNode.click();
+
+        }
+
+
+        function unmorphSectionSearchHolder() {
+            document.getElementById("holder_div").removeChild(actual_search_bar)
+            document.getElementById("search_holder").appendChild(searchBar)
+            document.getElementById("holder_results_div").style.opacity = .05
+            document.getElementById("holder_div").style.opacity = .05
+            // document.getElementById("search_holder").removeChild(document.getElementById("holder_results_div"))
+            document.getElementById('search_holder').classList.remove('morphed');
+
+            document.getElementById('body').removeChild(document.getElementById('exitbutton'))
+
+        }
+        function morphSectionSearchHolder() {
+            var imgElement = document.createElement("img");
+            imgElement.src = "img.png";
+            imgElement.id = "exitbutton"
+            imgElement.classList.add("exit_button");
+            imgElement.onclick = function () {
+                unmorphSectionSearchHolder();
+            };
+            document.getElementById("body").appendChild(imgElement)
+            document.getElementById('search_holder').classList.add('morphed');
+            document.getElementById("holder_div").prepend(actual_search_bar)
+            document.getElementById("search_holder").removeChild(searchBar)
+            document.getElementById("holder_results_div").style.opacity = 1
+            document.getElementById("holder_div").style.opacity = 1
+
+
+
+
+
+
+            // document.getElementById("search_holder").appendChild(div).appendChild(document.getElementById("search_results"))
+            // document.getElementById("holder_results_div").style.opacity= 1
+
+
+
+            // Append the img element to the container
+
+            // document.getElementById('search_bar_input').addEventListener('input', function () {
+            //     clearSearchResults();
+            //     updateSearchResults();
+            // });
+
+
+        }
+    </script>
+
+    <script>
+        const csvData = `
+ALAA,ABDELLATIF,A,1,1	
+SALEEA,WARD,B,23,2	
+LONDON,WATSON,B,23,3	
+BILLY,WATTS,B,23,4	
+HEZEKIAH,WESSON,B,23,5	
+XAVIER,WEST,B,23,6	
+PERSIA,WHISLER,B,23,7	
+KAESON,WHITE,B,23,8	
+MARIA,WHITE,B,23,9	
+SARAH,AGUILAR,B,3,8	
+ESTELA,ACOSTA,B,5,1	
+ASHLEY,ACOSTA,B,5,2	
+ABERNATHY,ELLIOT,B,5,3	
+CHIBUZOR,ABIA,A,1,2	
+HERSON,ACOSTA,A,1,3	
+OLUWAKEMI,ADEBISI,A,1,4	
+JOSHUA,AGUILAR,A,1,5	
+CHRISTOPHER,ADAMES,A,6,1	
+ROMEESA,ADNAN,A,6,2	
+AYOADE,AGBAJE,A,6,3	
+XIAOLI,AGOBA,A,6,4	
+AILEEN,AGUILAR CASTILLO,A,6,5	
+JOSE,AGUIRRE,A,6,7
+ALI,AHMAD,A,6,8
+DEVA,AHNINE,A,6,9
+ADEBOLA,AJAJA,A,6,10
+IDDI,AKILI,A,6,11
+NOAH,ALBA,A,6,12
+ANTHONY,ALBRIGHT,B,3,7
+IVAN,ALCANTAR,A,6,13
+NATALIE,ALCANTARA,B,3,6
+JESHUA,ALEGRIA,A,6,14
+MADISON,ALEXANDER,A,6,15
+MICAH,ALEXANDER,B,3,5
+SHELSIE,ALEXIS,A,6,16
+JAYNIAH,ALFRED,B,6,16
+ABDISALAN,ALI,B,6,15
+MICHAEL,ALIMAMY-SESAY,B,6,14
+EVELYN,ALMENDAREZ,B,6,13
+AYOMIDE,ALONGE,A,2,8
+JACOB,ALPIZAR,B,6,12
+ALETH,ALTAMIRANO,B,6,11
+JAYLA,ALVARADO,B,6,10
+NICOLE,ALVARADO,B,6,9
+GABRIEL,ALVAREZ,B,6,8
+JIMENA,ALVAREZ,B,6,7
+VANESSA,ALVAREZ,B,6,6
+CHINYERE,AMADI,B,3,4
+MICHAEL,AMAYA,B,6,5
+CRISTHIAN,AMAYALOVO,B,6,4
+IKHLAAS,AMIR,B,6,3
+CHINDY,ANABA,B,6,2
+MARIA,ANCIANIROJAS,B,6,1
+CHARLES,ANDERSON,A,2,9
+ISAI,ANTUNEZ,A,7,1
+KAYLA,ANTUNEZ,A,7,2
+DANIEL,ANTUNEZLOREDO,A,7,3
+RACHEAL,APATA,A,7,4
+JORGE,ARCEO,A,1,6
+EMILY,ARGUETA,A,7,5
+NATHALIA,ARGUETA,A,7,6
+ROSA,ARMIJO,A,7,7
+ALEXIS,ARMSTRONG,A,7,8
+EMILY,ARROYO,A,1,7
+ANAIS,ARROYORAMIREZ,A,7,9
+EMILIO,ARVIZU,A,7,10
+ZOEY,ASHLEY,A,7,11
+VICTORIA,ATENCIOBRITO,A,7,12
+JENNIFER,AUTRY,A,7,13
+JADE,AVALOS,A,7,14
+LUISANGEL,AYALA,A,7,15
+FAISAL,AZIMY,A,7,16
+FROHAR,AZIMY,B,7,16
+MATTHEW,BALLESTEROS,B,7,15
+SAPREEM,BALLESTEROS,B,7,14
+KAMILA,BAMBA,B,7,13
+JIEL,BANDA,B,7,12
+JAHLA,BANKS,B,7,11
+JOSHUA,BARAHONA,B,7,10
+NATHALY,BARCENAS,B,7,9
+CHRISTIAN,BARRIOS,B,7,8
+AISHAT,BASHEER,B,7,7
+DEYON,BATISTE,B,7,6
+DARIELLE,BATRESDARDON,B,7,5
+PAUL,BATTLE,B,7,4
+ADRIAN,BAUTISTA,B,7,3
+ABDULMALIK,BELLO,A,1,8
+ELIYAH,BENNETT,B,7,2
+JONATHON,BENNETT,B,7,1
+NICOLE,BENTLEY,A,8,1
+CHRISHEM,BERNARD,A,1,9
+JEXEMIR,BIDO,B,3,3
+SAMYIA,BLAIR,A,8,2
+KAYLEIGH,BOCANEGRA,A,8,3
+MAKENSIE,BOCANEGRA,A,8,4
+DOMINIC,BONDSWELL,A,8,5
+CLEMENT,BONGHAM,B,3,2
+CHRISTOPHER,BONHAM,A,8,6
+TIM'LANESHA,BONHAM,A,8,7
+BRANDEN,BOOKER,A,8,8
+DEVIN,BRADFORD,A,8,9
+ANGELINA,BROWN,A,8,10
+MARQUAN,BROWN,A,8,11
+WILLIE,BROWN,A,8,12
+SYNIAH,BRUCE,A,8,13
+THIENAN,BUI,A,1,10
+ALEXANDER,BUNJEVCEVIC,A,8,14
+SYDNEE,BURR,A,8,15
+JALA,BYRD,A,8,16
+JALISA,BYRD,B,8,16
+LAMARION,BYRD,B,8,15
+LESHOUN,BYRD,B,8,14
+ALYSSA,CABRERA,B,8,13
+EMILY,CABRERA,B,8,12
+YOSVANY,CABRERA,B,8,11
+KEVIN,CADORETTE,B,8,10
+CLARKE,CALDWELL,A,2,10
+GABRIEL,CALLOWAY,B,8,9
+ALEXA,CAMPBELL,B,8,8
+DANIELA,CAMPOSGARCIA,B,8,7
+YAHIR,CAMPUZANOGONZALEZ,A,2,11
+ABIGAIL,CANTU,A,2,12
+LAYLA,CARCAMO,A,1,11
+NAYELI,CARLI,B,8,6
+EILEEN,CARRANZA,A,2,13
+FATIMA,CARRANZAHERNANDEZ,B,8,5
+RYA,CARTER,B,8,4
+JOSLYN,CASTILLO,B,3,1
+MACAYLA,CASTILLO,B,8,3
+MAXIMILIANO,CASTILLO,B,8,2
+AMY,CASTRO,B,8,1
+CHRISTOPHER,CASTRO,A,9,1
+KEVIN,CASTROMORALES,A,9,2
+JIMMY,CAZARES-SIQUE,A,9,3
+SAUL,CERDA,A,9,4
+GIOVANI,CHAIREZ,A,9,5
+ANIKA,CHATTERJEE,A,1,12
+VANESSA,CHAVERRIA,A,1,13
+LUXI,CHEN,A,9,6
+SIERRA,CHIQUITO,A,9,7
+BRIANA,CLARK,A,9,8
+LANDAN,CLARK,A,2,14
+DEREK,COLLINSWORTH,A,9,9
+KENDRICK,COLON,A,9,10
+MARIELIZ,COLON,A,9,11
+JEREMIAH,COMBS,A,9,12
+JAMISELLE,CONTRERAS,A,9,13
+TASHUN,CONWAY,A,9,14
+TEMORIEA,CONWAY,A,9,15
+TIARA,CONWAY,A,9,16
+AVAYA,COOK,B,9,16
+JACKSON,CORMIER,A,2,15
+DANIEL,CORNEJOLOPEZ,B,9,15
+TANIA,CORREA,A,2,16
+ABRAHAM,CORTEZSORIANO,B,9,14
+MICHEAL,COURTNEY,B,9,13
+DEVIN,COVARRUBIAS,B,9,12
+JESSICA,CRAIG,B,9,11
+CHANCE,CROW,B,9,10
+CARL,CLEY,B,9,9
+KIMBERLY,CRUZ,A,1,14
+KYTZIA,CUAUTLEMIRANDA,B,9,8
+ALONDRA,CUEVAS,A,4,1
+DAYSHAUN,CULBERSON,B,9,7
+ALBERT,CUNNINGHAM,B,9,6
+DARLENE,CUXUM,B,9,5
+ANIYAH,DALCOUR,B,2,16
+ANH,DANG,B,9,4
+AMIYA,DAVIS,B,9,3
+ARIEYANNA,DAVIS,B,9,2
+HANNAH,DAVIS,A,4,2
+ALAN,DEJESUS,B,9,1
+FATIMA,DEJESUS,A,4,3
+ADRIAN,DELACRUZHERNANDEZ,A,10,1
+ALONDRA,DELAFUENTE,A,1,15
+JOSHUA,DEAN,A,4,4
+ROLAND,DEDDEH,A,10,2
+ANGEL,DELGADO,A,10,3
+ALLISON,DERAS,A,10,4
+LEAH,DESCHAMPS,B,2,15
+ALBERT,DIAZ,A,10,5
+ANGELO,DIAZ,A,4,5
+JOSEPH,DIAZ,A,10,6
+JOSHUA,DIAZ,A,10,7
+CAMILA,DIAZORELLANA,A,10,8
+ANGEL,DIAZPATINO,A,10,9
+KATHY,DOAN,A,1,16
+ROBYN,DORSEY,A,10,10
+ISABELLA,DOWNING,A,10,11
+STEPHANIE,DUARTE,A,10,12
+ZAKYRAN,DUMAS,A,10,13
+ZARYAN,DUMAS,A,10,14
+ZAILYN,DYSON-CRAWFORD,A,10,15
+TRE'VEON,EASTERWOOD,A,10,16
+ASSURANCE,ECHAMI,A,4,6
+BRADLEY,ECHERENWA,B,10,16
+JASON,ECHEVERRIA,B,10,15
+AUDREY,ECHOLS,A,4,7
+KYLE,ELLIS,B,10,14
+MIKAELA,ERAZO,B,1,16
+DERICK,ESCOBAR,B,10,13
+ALBERTO,ESMERALDA,B,10,12
+BRIANNA,ESPINOZA,B,2,14
+JEFFREY,ESPINOZA,B,10,11
+DULCE,ESQUIVEL,B,10,10
+PRECIOUS,ETUK,B,10,9
+DANIEL,EULIARTE,B,10,8
+NIA,EVERIDGE,B,1,15
+AMAKA,EZUMA-NGWU,B,1,14
+SOFIA,FAJARDOMARTINEZ,A,4,8
+AYOTOMIWA,FAKORODE,B,10,7
+JAIDEN,FAUST,B,10,6
+JAILEN,FAUST,B,10,5
+IBRAHIM,FAYAD,B,10,4
+JASMINE,FELIX,B,10,3
+KEVIN,FELIXOBLETON,B,10,2
+EVITA,FEURTADO,B,10,1
+NADIA,FIELDS,A,11,1
+JONATHAN,FLEMING,A,11,2
+ELIZABETH,FLORES,A,4,9
+JORDAN,FLORES,A,11,3
+KEVIN,FLORES,A,11,4
+KATE,FLORESGALLARDO,A,11,5
+DIEGO,FLORESMEJIA,A,4,10
+JORDAN,FORD,A,11,6
+TINARUTH,FORD,A,11,7
+DEBONY,FRAUSTO,A,11,8
+CLARK-MAXIMILLIAN,FREDENBURG,A,11,9
+ENOC,FUENTEZMARTINEZ,A,11,10
+CALVION,FULLER,A,11,11
+KELVIN,FULLER,A,11,12
+ALIJAH,GAINES,A,11,13
+NESTOR,GAMEZ,A,11,14
+ANADANIELLA,GARCIA,A,4,11
+ARIANA,GARCIA,A,4,12
+DIEGO,GARCIA,A,11,15
+DIVANY,GARCIA,A,11,16
+EIDEN,GARCIA,B,11,16
+ESMERALDA,GARCIA,B,2,13
+GERARDO,GARCIA,B,11,15
+JEREMIAS,GARCIA,B,11,14
+MEAGAN,GARCIA,B,11,13
+MICHAEL,GARCIA,B,11,12
+NAOMI,GARCIA,B,11,11
+NATHAN,GARCIA,B,11,10
+OSVALDO,GARCIA,A,4,13
+MISAEL,GARCIAESPRONCEDA,B,11,9
+VERONICA,GARCIAPARKS,B,11,8
+JAVION,GASCEY,B,11,7
+JESSIE,GERALD,B,11,6
+IMAN,GIBSON,B,11,5
+ANDREW,GILES,B,11,4
+PARIS,GLADNEY,B,11,3
+ALEXANDER,GOMEZ,B,11,2
+CESAR,GOMEZ,B,2,12
+JAYDEN,GOMEZ,B,11,1
+MONICA,GOMEZ,A,12,1
+YAOSKA,GOMEZPASTORA,A,12,2
+EDDIE,GONZALES,A,12,3
+LIAH,GONZALES,A,12,4
+MICHAEL,GONZALES-CARDOSO,A,4,14
+ANGELINE,GONZALEZ,A,12,5
+EMILY,GONZALEZ,A,12,6
+JIMENA,GONZALEZ,A,12,7
+LEOPOLDO,GONZALEZ,B,1,13
+MIGUEL,GONZALEZ,A,12,8
+NICOLAS,GONZALEZ,A,12,9
+CLAUDIA,GONZALEZCAPOCHE,A,12,10
+ORLANDO,GONZALEZKOLMAN,A,12,11
+SEBASTIAN,GONZALEZMORALES,A,12,12
+ANTON,GOODWIN,A,12,13
+JALIYAH,GRAY,A,4,15
+JORDAN,GRICE,A,12,14
+JENNIFER,GRIMALDO,B,1,12
+KEVIN,GUERRAAGUILAR,A,12,15
+VERONICA,GUEVARA,A,12,16
+THAIS,GUEVARA-SALINAS,B,2,11
+EESHA,GUPTA,B,1,11
+MATTHEW,GUTIERREZ,A,4,16
+SYDNEY,GUTIERREZ,B,4,16
+MARIAM,GUTIERREZSANCHEZDELCAMPO,B,12,16
+NEHEMIAS,GUZMAN,B,12,15
+AMIAH,HALL,B,12,14
+KE'AUNDRA,HANKS,B,12,13
+DOMINIC,HARRIS,B,12,12
+SYDNI,HARRIS,B,12,11
+DERRICK,HASLERIG,B,12,10
+CE'NIYAH,HEARNE,B,12,9
+ELIJAH,HEARNE,B,12,8
+THALIA,HECTOR,B,12,7
+AMBER,HENRY,B,12,6
+KE'MARION,HENRY,B,12,5
+ONESTY,HENRY,B,12,4
+CHARLES,HERMAN,B,12,3
+ALEXA,HERNANDEZ,B,4,15
+ANGIE,HERNANDEZ,B,4,14
+EDUARDO,HERNANDEZ,B,12,2
+EMILY,HERNANDEZ,B,2,10
+MICHAEL,HERNANDEZ,B,12,1
+MYA,HERNANDEZ,A,13,1
+CLARITZA,HERNANDEZRAMIREZ,A,13,2
+JONNATHAN,HERRERA,A,13,3
+JAMYLA,HICKS,A,13,4
+I'MARIYA,HIGGINS,A,13,5
+MAKAYLA,HILL,A,13,6
+AMYA,HINES,A,13,7
+YASMIN,HOWARD,B,4,13
+JABOREE,HOWELL,A,13,8
+BRYCE,HUBBARD,B,2,9
+AYDEN,HUGHES,A,13,9
+JAEDA,HYLES,A,13,10
+MARTIN,IBANEZ,B,2,8
+NORA,INIESTA,B,4,12
+JAZMIN,IPINA,A,13,11
+THEODORE,ISAAC,B,1,10
+LAILA,IVERY,B,2,7
+ALEJANDRO,IZQUIERDOPEREZ,A,13,12
+ANAYA,JABBAR,B,2,6
+JEREMIAH,JACKSON,A,13,13
+AMYA,JAMES,A,13,14
+BRIELLE,JEAN-LOUIS,A,13,16
+JAVION,JEANLOUIS,A,13,15
+JAMITRIUS,JESSIE,B,13,16
+DANIELA,JIMENEZ,B,2,5
+JOCELYN,JIMENEZ,B,1,9
+MICHEAL,JIMENEZALMANZA,B,13,15
+ALIYAH,JOHNSON,B,13,14
+AUBRIE,JOHNSON,B,13,13
+CIARA,JOHNSON,B,13,12
+DARREA,JOHNSON,B,13,11
+JORDAN,JOHNSON,B,13,10
+OLUWANIFEMI,JOHNSON,B,2,4
+ALTECIA,JONES,B,13,9
+BROOKLYN,JONES,B,4,11
+JAYDA,JONES,B,13,8
+LOYAL,JONES,B,13,7
+JOHN,JORDAN,B,13,6
+MELAKI,JOSEPH,B,13,5
+NATHAN,JOSEPH,B,13,4
+MOSES,JUAREZ,B,13,3
+MARY,JUPITER,B,13,2
+SARAH,KAFIL,B,1,8
+NICOLE,KAHAMBU,B,13,1
+MOSES,KAMARA,A,14,1
+DANIELA,KARA,B,4,10
+EMMANUEL,KARZON,A,14,2
+MADALYNN,KAUFMAN,A,14,3
+JADA,KEARNEY,A,14,4
+KEVIN,KEARNEY,A,14,5
+CONNOR,KING,A,14,6
+JASMINE,KOSAKO,A,14,7
+DANIIL,KOVEZA,A,14,8
+O'CEYVION,LABOY,A,14,9
+ALEXTON,LACY,A,14,10
+ASHLEY,LANDAVERDETORRES,A,14,11
+DENICIA,LANDRY,A,14,12
+KATILYN,LANDRY,A,14,13
+YASMIN,LARA,A,14,14
+NAM,LE,A,14,15
+NGAN,LE,A,14,16
+KHOI,LEVAN,B,14,16
+SUSAN,LEDEZMA,B,1,7
+BRAY'DEN,LEWIS,B,14,15
+MATTHEW,LEWIS,B,14,14
+CRISTHIAN,LEYVAZALDIVAR,B,14,13
+MONTSERRAT,LIMON,B,4,9
+NATHALY,LINARES,B,2,3
+ALESSA,LINARESRIVAS,B,2,2
+KIMBERLY,LONDONO,B,4,8
+BRIANA,LOPEZ,B,14,12
+CHRISTIAN,LOPEZ,B,14,11
+ELIJAH,LOPEZ,B,14,10
+GUILLERMO,LOPEZ,B,4,7
+MARIA,LOPEZ,B,14,9
+BRYANA,LOWE,B,1,6
+PENELOPE,LOZANO,B,14,8
+JESHUA,LUCIO,B,14,7
+EDER,LUGOHERNANDEZ,B,14,6
+ALLAN,LUQUE,B,14,5
+CHRISTY,LY,B,14,4
+REAGAN,MAAG,B,14,3
+NIKOLAS,MACEDO,B,4,6
+CARLOS,MACIAS,B,14,2
+NIA'JE,MACK,B,14,1
+THADDAUS,MADISON,A,15,1
+JAHIR,MALDONADO,A,15,2
+KEVIN,MALDONADO,A,15,3
+STEVEN,MANZANILLORINCON,A,15,4
+ANDERSON,MARADIAGAHERNANDEZ,A,15,5
+KATHERINE,MARESBERMUDEZ,A,15,6
+ALEX,MARIN,A,15,7
+JENNIFER,MARINERONERIO,A,15,8
+JULISSA,MARQUEZ,A,15,9
+SEBASTIAN,MARQUEZ,A,15,10
+LAURA,MARQUEZ-MONTOYA,B,2,1
+BYRONISHA,MARTIN,A,15,11
+KAILEE,MARTIN,A,3,1
+LARRIONNA,MARTIN,A,15,12
+JOEL,MARTINDELCAMPO,A,15,13
+ALAN,MARTINEZ,A,15,14
+BRIAN,MARTINEZ,A,15,15
+CESAR,MARTINEZ,A,15,16
+JIMENA,MARTINEZ,B,15,16
+JOSUE,MARTINEZ,B,15,15
+KEVIN,MARTINEZ,B,15,14
+MICHELLE,MARTINEZ,B,15,13
+VALERIA,MARTINEZ,B,15,12
+EMILIANO,MARTINEZMALDONADO,B,15,11
+TYRIELL,MASSEY,B,15,10
+ABIGAIL,MATA,B,15,9
+ESIS,MAURICIO,B,15,8
+HEILI,MCCOY,B,15,7
+DAJON',MCILVEEN,B,15,6
+KATHRYN,MCINTYRE,B,15,5
+MIRACLE,MCKNIGHT,B,15,4
+KAITLYN,MCNEASE,A,3,2
+RITANIE,MEAS,A,3,3
+VANNICA,MEAS,B,15,3
+AIYONNA,MEDEARIS,B,15,2
+BAW,MEH,B,15,1
+ALLAN,MEJIA,A,16,1
+ANGEL,MEJIA,A,16,2
+REILY,MEJIA,A,16,3
+ROSELYN,MEJIA,A,16,4
+SHERLYN,MEJIA,A,16,5
+JOCELYN,MEJIAARIAS,A,16,6
+CRISTIAN,MEJIAPERDOMO,A,16,7
+FRIDA,MENDEZ,A,16,8
+ASTRID,MENDIADELEON,A,16,9
+EEMILY,MERCADO,A,16,10
+CARSYN,MERCEDES,A,16,11
+GERSON,MESA,A,16,12
+HAZBIJE,METOLLI,A,3,4
+MIA,MEZASALGADO,A,16,13
+JORDAN,MILLER,A,16,14
+MARIAH,MIMS,A,16,15
+ODIR,MIRANDA,A,16,16
+BRANDON,MISZTAL,B,4,5
+ALISHA,MITCHELL,B,16,16
+COREY,MITCHELL,B,16,15
+ZANIYA,MITCHELL,B,4,4
+DALLON,MIXON,B,16,14
+LAYDA,MOLINA,B,16,13
+MARK,MOLINA,B,16,12
+ALVARO,MOLINARIVAS,B,1,5
+ISABELLA,MONTES,B,16,11
+IVY,MONTOYA,B,1,4
+LEX,MOORE,B,16,10
+ROBERTO,MORENOFRAUSTO,B,16,9
+ZACHARY,MORGAN,B,16,8
+JAMETRIA,MORRIS,B,16,7
+STEVE,MORRIS,B,16,6
+TERREL,MORRIS,B,16,5
+ARACELY,MOSQUEDA,B,16,4
+AIDAN,MUNOZ,B,16,3
+YARELI,MUNOZ,B,4,3
+DAMYREE,MURRAY,B,16,2
+THOMAS,NASHED,B,16,1
+ASHLEY,NAVARRO,A,17,1
+ATIYA,NEDD,A,17,2
+DE'MARCUS,NEWMAN,A,17,3
+AN,NGUYEN,B,4,2
+NHUY,NGUYEN,B,4,1
+LYDIA,NJOME,B,1,3
+ANDREA,NKRUMAH,A,5,1
+JANAE,NORMAN,A,17,4
+AIMAR,NUNEZ,A,17,5
+DANNY,NUNEZ,A,5,2
+KHYON,NUNN,A,17,6
+ROBERTO,NUNO,A,17,7
+IKENNA-CHIDEBELU,NWANKWO,A,17,8
+ANWAR,NYEI,A,17,9
+ADANNA,OBOEGBULEM,A,17,10
+DESIREE,OCAMPO,A,17,11
+STEPHANNY,OCAMPOQUEBRADA,A,17,12
+OHIOZIO,OJEIKERE,A,5,3
+STECY,OKPALAOBI,A,17,13
+SELINA,AGUILERA,A,6,6
+CHIMUANYA,ONWUZULU,A,17,14
+ASHLEE,OQUENDO,A,5,4
+EDUARDO,ORELLANA,A,17,15
+ERICK,ORELLANA,A,17,16
+EMILT,ORTIZ,B,17,16
+MICHELLE,ORTIZ,B,17,15
+EMMANUEL,ORTIZPARRADO,B,17,14
+ANGELICA,OSORIO,B,17,13
+CATHERINE,OVIEDO,B,17,12
+OLIVIA,OWENS,B,17,11
+FESTUS,OWOEYE,B,17,10
+JULIAN,PADRON,B,17,9
+KIMBERLY,PATLANLUNA,B,17,8
+JASE,PATTERSON,B,17,7
+ANTHONY,PEARCE,B,17,6
+VALERIA,PEQUENO,A,5,5
+AGUSTIN,PEREZ,A,5,6
+LEONARDO,PEREZ,B,17,5
+MARIANA,PEREZ,A,3,5
+MARTA,PEREZPAJON,B,17,4
+KAILEY,PERRY,B,17,3
+TRINITY,PERRY,B,17,2
+JORDAN,PETERSON,B,17,1
+KYNEDI,PETITT,A,18,1
+ISAAC,PICAZO,A,18,2
+CHRISTIAN,PIER,A,18,3
+ADRIAN,PIMENTEL,A,18,4
+MELANIE,PINEIROFERNANDEZ,A,18,5
+REVE,PINON-ORTIZ,A,18,6
+DAMARIZ,POENTE,A,18,7
+JIMMY,POLANCOCHAVARRIA,A,18,8
+SANTANA,POLK,A,18,9
+KA'LEYAH,POLLARD,A,18,10
+FERNANDO,PONCE,A,18,11
+DASHIELL,PONCEDELEON,A,18,12
+ALEJANDRA,POZOS-GALINDO,A,3,6
+AMARRI,PREJEAN,A,18,13
+TIEONA,QUALLS,A,18,14
+ROSA,QUINTANILLA,A,18,15
+DAVID,QUIROGA,A,18,16
+CHASE,RAGAS,B,18,16
+TEMITAYO,RAJI,B,18,15
+MOHAMMED,RAMAKDAWALA,B,1,2
+CHRISTOPHER,RAMIREZ,B,18,14
+EMILY,RAMIREZ,B,18,13
+JORGE,RAMIREZ,B,18,12
+JUAN,RAMIREZ,B,18,11
+JUANITA,RAMIREZ,B,18,10
+NINA,RAMIREZ,B,18,9
+OSBEL,RAMIREZ,B,18,8
+SAMANTHA,RAMIREZ,B,18,7
+SERGIO,RAMIREZ,B,18,6
+ROXANA,RAMIREZMATOS,A,5,7
+MIGUEL,RAMIREZ-PAZ,B,18,5
+CHRISTIAN,RAMOS,B,18,4
+CHRISTOPHER,RAMOS,B,18,3
+HANNAH,RAMOS,B,18,2
+JONATHAN,RAMOS,B,18,1
+RYAN,RASCO,A,19,1
+CIARA,RAVEN,A,19,2
+HAILEY,RAVEN,A,19,3
+CARLOS,RAZO,A,19,4
+ANYELO,REGALADOGARCIA,A,3,7
+MARIA,REGUEIROGARCIA,A,19,5
+POE,REH,A,19,6
+MICHAEL,RENDON,A,19,7
+BENJAMIN,REVELES,A,19,8
+BRAYAN,REYES,A,5,8
+CYNTHIA,REYES,A,19,9
+DANIEL,REYES,A,19,10
+VALERIA,REYES,A,19,11
+VALERIE,REYES,A,19,12
+FERNANDO,REYESMENDEZ,A,19,13
+NAYELY,REYESTREVINO,A,19,14
+JOSEPH,REYNAGALARZA,A,19,15
+LA'TRAYVION,RICHARDS,A,19,16
+DASHAUN,RICHARDSON,A,5,9
+ANGELA,RIOS,B,19,16
+JOEL,RIOS,A,5,10
+MARCUS,RIVAS,B,19,15
+KAROLAIN,RIVASSERNA,A,5,11
+MARYURY,RIVASSERNA,A,5,12
+JAKOB,RIVERA,B,19,14
+JENNISHA,RIVERACOLON,B,19,13
+KATHERINE,RIVERAREYES,A,3,8
+HILLARY,RIVERARODRIGUEZ,A,3,9
+DOMINIC,ROBERTS,B,19,12
+WILBERT,ROBERTS,B,1,1
+ALEX,ROBINSON,B,19,11
+AYLA,ROBINSON,B,19,10
+TYSON,ROBINSON,B,19,9
+SOFIA,ROCHA,A,3,10
+EMILY,RODAS,B,19,8
+ADELA,RODRIGUEZ,B,19,7
+ALEXA,RODRIGUEZ,B,19,6
+CAROLINA,RODRIGUEZ,B,19,5
+CRISTOPHER,RODRIGUEZ,B,19,4
+KAREN,RODRIGUEZ,B,19,3
+KYLER,RODRIGUEZ,A,3,11
+LILIANA,RODRIGUEZ,A,3,12
+MIA,RODRIGUEZ,B,19,2
+RAQUEL,RODRIGUEZ,B,19,1
+SAMUEL,RODRIGUEZ,A,20,1
+DIANA,RODRIGUEZ-REYNA,A,20,2
+JON,ROGERS,A,20,3
+JUDITH,ROJAS,A,5,13
+MICHELLE,ROJAS,A,5,14
+LIANET,ROJASLOBERA,A,20,4
+AZARIAH,ROLDAN,A,20,5
+DANIELA,ROMANMARTINEZ,A,5,15
+GABRIEL,ROMERO,A,20,6
+BRANDON,ROMO,A,20,7
+JOELYS,ROSARIOMATIAS,A,20,8
+MARY,ROSARIOPOLANCO,A,3,13
+KEVIN,ROSCOE,A,20,9
+HOPE,ROSE,A,20,10
+KAILEY,ROSS,A,5,16
+AVONTI,RUBEIRO,A,20,11
+PAULINA,RUBIO,A,20,12
+FERNANDO,RUBIOHERNANDEZ,A,20,13
+JORGE,RUEDAMOLINA,B,5,16
+ANTHONY,RUIZ,A,20,14
+CARLOS,RUIZ,A,3,14
+KIANIE,RYAN,A,20,15
+AYA,SABAH,A,3,15
+DIANA,SABILLON,A,20,16
+MIA,SAINZ,B,20,16
+DIEGO,SALAZAR,B,20,15
+ELYANNA,SALAZAR,A,2,1
+EVELIO,SALAZAR,B,20,14
+JOAQUIN,SALAZAR,A,3,16
+ANGELA,SALINAS,B,20,13
+ISIS,SANMIGUEL,B,20,12
+ALANIS,SANCHEZ,B,20,11
+BRAYAN,SANCHEZ,B,20,10
+BRYANT,SANCHEZ,B,20,9
+CARLOS,SANCHEZ,B,20,8
+ERICK,SANCHEZ,B,20,7
+JUSTIN,SANCHEZ,B,20,6
+KAITLYN,SANCHEZ,B,20,5
+ALEJANDRO,SANCHEZDELAPENA,B,20,4
+L'KEYON,SANDERS,B,20,3
+DIEGO,SANTELIS,B,20,2
+DANIELA,SAPON,B,3,16
+CARLOS,SAZO,B,20,1
+JUSTUS,SCOTT,A,21,1
+MOHAMMAD,SEDIQI,A,21,2
+MICHAEL,SEGOVIA,A,2,2
+KATELIN,SELBY,A,21,3
+ARIANA,SEPULVEDA,B,3,15
+MELANY,SERRANO,B,5,15
+JASMINE,SESAY,A,21,4
+JAALAH,SHAND,A,2,3
+NASIR,SHARPLES,A,21,5
+CAMERON,SHAW,A,21,6
+AUDREY,SHEA,B,3,14
+ABDULLAH,SHITTU,A,2,4
+KARMELA,SIGALA,A,21,7
+MACKAYLLA,SILVA,A,21,8
+ANIYAH,SMITH,A,21,9
+JAIONNA,SMITH,B,3,13
+KAYLYN,SMITH,A,21,10
+TASIA,SMITH,A,2,5
+TAYLOR,SMITH,A,21,11
+ISAIAH,SNELL,A,21,12
+DAVEN-RYAN,SORIANO,A,21,13
+MAXWELL,SOTO,A,21,14
+MONSERRATH,SOTO,A,21,15
+EDSON,SOTOMORALES,A,21,16
+DAIJA,STASHER,B,21,16
+ANDREW,STEWART,B,3,12
+SKI'LA,STOVALL,B,21,15
+TAI,STRINGFIELD,B,21,14
+BRIA,STURKEY,B,21,13
+JAMES,SWAN,B,21,12
+JEREMIAH,SWANSON,B,21,11
+HUONG,TA,B,21,10
+CHRISTOPHER,TACAM,B,3,11
+YAHAIRA,TAHAY,B,21,9
+OLAWALE,TAIWO,B,5,14
+CHUNCEY,TAYLOR,B,21,8
+EMORY,TAYLOR,B,21,7
+ALEJANDRO,TEJEDA,B,21,6
+NADIA,TENORIO,B,21,5
+DANIEL,TERRAZAS,B,21,4
+KALEB,TESFAMARIAM,B,5,13
+AMELIA,THOLITI,A,2,6
+ALIYANAH,THOMAS,B,21,3
+JUMETRIUS,THOMAS,B,21,2
+CHRISTOPHER,THOMPSON,B,21,1
+DAMARI,THOMPSON,A,22,1
+BRYAN,TIENDREBEOGO,B,5,12
+AARON,TILLIS,A,22,2
+ABRAHAM,TORRES,A,22,3
+ANGEL,TORRES,B,5,11
+LAURA,TORRES,A,22,4
+EMILIANO,TREVINO,A,22,5
+CLAUDIA,TRISTANSALINAS,A,22,6
+ASYA,TROTTER,A,22,7
+YANK,TRUJILLO,A,22,8
+ROYER,TRUJILLOBUSTAMANTE,A,22,9
+DAN,TRUONG,B,3,10
+ENOCH,UMANZOR,A,22,10
+VICTORIA,VACAORTEGA,B,5,10
+YAILYN,VALDEZGERMAN,A,22,11
+SERGIO,VALDIVIA,A,22,12
+ETHAN,VALERA,A,22,13
+TRINITY,VALLE,A,22,14
+CHRIS,VARGASMONREAL,A,22,15
+VIVIANA,VASQUEZ,B,5,9
+JORGE,VASQUEZESCOBAR,A,22,16
+AVA,VAZQUEZ,B,22,16
+ETIENNE,VAZQUEZ,B,22,15
+BILLY,VEGA,B,22,14
+KEVIN,VEGA,B,22,13
+ADRIAN,VELASQUEZ,A,2,7
+OMAR,VELASQUEZ,B,22,12
+EMILY,VELAZQUEZ,B,22,11
+ISABELLA,VELEZ,B,5,8
+LEOANI,VENTURA,B,22,10
+JA'KYRA,VERRET,B,22,9
+AIDEN,VIGERS,B,22,8
+PERLA,VILLALOBOSVALLADARES,B,22,7
+LINDSEY,VILLATOROBLANCO,B,22,6
+SALVADOR,VILLEGAS,B,22,5
+HAN,VO,B,22,4
+VICTORIA,VOSPER-WOGHIREN,B,22,3
+ABDUL,WAHIDI,B,5,7
+JAYDEN,WALLACE,B,5,6
+KAMBRI,WALLACE,B,22,2
+ARMONIE,WALTERS,B,22,1
+JYRANAI,WALTON,A,23,1
+SALEEA,WARD,A,23,2
+LONDON,WATSON,A,23,3
+BILLY,WATTS,A,23,4
+HEZEKIAH,WESSON,A,23,5
+XAVIER,WEST,A,23,6
+PERSIA,WHISLER,A,23,7
+KAESON,WHITE,A,23,8
+MARIA,WHITE,A,23,9
+SHAIANNE,WHITE,A,23,10
+DANEECE,WILLIAMS,A,23,11
+DER'WINAE,WILLIAMS,A,23,12
+DOMINIQUE,WILLIAMS,A,23,13
+MAKAYLA,WILLIAMS,A,23,14
+MARVIN,WILLIAMS,A,23,15
+SADIYAH,WILLIAMS,A,23,16
+MARCUS,WILSON,B,23,16
+CAMERON,WINE,B,3,9
+VERNON,WOOLRIDGE,B,23,15
+ZEAJAH,WORTHY,B,23,14
+KARISS,WRIGHT,B,5,5
+SHANTEL,YIRENKYI,B,5,4
+HUNTER,YOUNG,B,23,13
+CHRISTOPHER,ZARAGOZA,B,23,12
+DUSTIN,ZAVALA,B,23,11
+ANGEL,ZUNIGA,B,23,10`;
+
+
+        //Parses data, into different rows
+        function parseData(data) {
+            const lines = data.trim().split('\n');
+            const objects = lines.map(line => {
+                const [firstName, lastName, section, row, seat] = line.trim().split(',');
+                return {
+                    firstName: firstName,
+                    lastName: lastName,
+                    section: section,
+                    row: parseInt(row),
+                    seat: parseInt(seat)
+                };
+            });
+            return objects;
+        }
+        //Calculates similarity and sistance
+        function levenshteinDistance(str1, str2) {
+            const len1 = str1.length;
+            const len2 = str2.length;
+            const dp = Array(len1 + 1).fill(null).map(() => Array(len2 + 1).fill(0));
+
+            for (let i = 0; i <= len1; i++) {
+                dp[i][0] = i;
+            }
+            for (let j = 0; j <= len2; j++) {
+                dp[0][j] = j;
+            }
+
+            for (let i = 1; i <= len1; i++) {
+                for (let j = 1; j <= len2; j++) {
+                    const cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+                    dp[i][j] = Math.min(
+                        dp[i - 1][j] + 1,
+                        dp[i][j - 1] + 1,
+                        dp[i - 1][j - 1] + cost
+                    );
+                }
+            }
+
+            return dp[len1][len2];
+        }
+        //Searches for the names
+        function searchNames(inputName, objects) {
+            inputName = inputName.toUpperCase().trim(); // Convert input to uppercase
+            let possibleFirstNames = [];
+            let possibleLastNames = [];
+            let possibleFullNames = [];
+            if (!inputName.includes(' ')) {
+                // If no space detected, search for first names or last names
+
+
+                for (let { firstName, lastName, section, row, seat } of objects) {
+                    if (firstName.toUpperCase().startsWith(inputName)) {
+                        possibleFirstNames.push(`${firstName} ${lastName}, ${section}, ${row}, ${seat}`);
+                    }
+                    if (lastName.toUpperCase().startsWith(inputName)) {
+                        possibleLastNames.push(`${firstName} ${lastName}, ${section}, ${row}, ${seat}`);
+                    }
+                }
+                possibleFirstNames.sort();
+                possibleLastNames.sort();
+
+                console.log("Possible first names:");
+                console.log(possibleFirstNames);
+                console.log("Possible last names:");
+                console.log(possibleLastNames);
+            } else {
+                // If space detected, search for full names
+                for (let { firstName, lastName, section, row, seat } of objects) {
+                    const fullName = `${firstName} ${lastName}`;
+                    if (fullName.toUpperCase().startsWith(inputName)) {
+                        possibleFullNames.push(`${fullName}, ${section}, ${row}, ${seat}`);
+                    }
+                }
+                possibleFullNames.sort();
+
+                if (possibleFullNames.length === 0) {
+                    // If no exact match found, search for similar full names
+                    const threshold = Math.ceil(inputName.length * 0.4); // Adjust threshold as needed
+                    for (let { firstName, lastName, section, row, seat } of objects) {
+                        const fullName = `${firstName} ${lastName}`;
+                        if (levenshteinDistance(inputName, fullName.toUpperCase()) <= threshold) {
+                            possibleFullNames.push(`${fullName}, ${section}, ${row}, ${seat}`);
+                        }
+                    }
+                    possibleFullNames.sort((a, b) => levenshteinDistance(inputName, a.toUpperCase()) - levenshteinDistance(inputName, b.toUpperCase()));
+                }
+
+                console.log("Possible full names:");
+                console.log(possibleFullNames);
+            }
+
+            const allNames = possibleFirstNames.concat(possibleLastNames).concat(possibleFullNames);
+
+
+
+            return allNames;
+        }
+
+        // Example usage:
+        // const objects = parseData(csvData);
+        // console.log("Enter");
+        // let inputName = prompt("Enter a name: ");
+        // searchNames(inputName, objects);
+
+
+        function clearSearchResults() {
+            const searchResultsDiv = document.getElementById('search_results');
+            searchResultsDiv.innerHTML = '';
+        }
+
+        function appendSearchResult(name) {
+            const searchResultsDiv = document.getElementById('search_results');
+            const section = document.createElement('section');
+            section.classList.add('section_search_name');
+            section.textContent = name;
+            section.addEventListener('click', function () {
+                unmorphSectionSearchHolder();
+            });
+            document.getElementByI
+            searchResultsDiv.appendChild(section);
+        }
+
+        function updateSearchResults() {
+            const searchResultsDiv = document.getElementById('search_results');
+
+
+            const inputName = document.getElementById('search_bar_input').value;
+            if (inputName === "") {
+                // Input is empty
+                return;
+            }
+            const objects = parseData(csvData); // Assuming csvData is defined somewhere
+            names = searchNames(inputName, objects);
+
+
+            // Loop through each name in the list
+            names.forEach(name => {
+                // Split the name by comma and extract the first value
+                const firstName = name.split(',')[0].trim();
+                const sectionLetter = name.split(',')[1].trim();
+                const rowNumber = parseInt(name.split(',')[2].trim());
+                const seatNumber = parseInt(name.split(',')[3].trim());
+                searchResultsDiv.innerHTML += `<section class="section_search_name" onclick="unmorphSectionSearchHolderandclick('${sectionLetter}','${rowNumber}','${seatNumber}')" id="${sectionLetter},${rowNumber},${seatNumber}">${firstName}</section>`;
+
+                // Add the first name to the array
+            });
+
+
+        }
+
+        // Clear search results when a new input is received
+        document.getElementById('search_bar_input').addEventListener('input', function () {
+            clearSearchResults();
+            updateSearchResults();
+        });
+
+
+        // Initial search when page loads
+        updateSearchResults();
+    </script>
+
+
+    <script>
+
+
+
+
+        // Sample CSV data with the new format
+        // Parse the CSV data and store it in an array
+        const csvRows = csvData.split('\n').map(row => row.split(','));
+
+        // Function to find the name based on section, row, and seat
+        function findName(section, row, seat) {
+            // Iterate over each row in the CSV data
+            for (const rowData of csvRows) {
+                // Check if the section, row, and seat match
+                if (rowData[2] === section && parseInt(rowData[3]) === row && parseInt(rowData[4]) === seat) {
+                    // If match found, return the full name
+                    return `${rowData[0]} ${rowData[1]}`;
+                }
+            }
+            // If no match found, return null or any other appropriate value
+            return null;
+        }
+
+        //Higlight Selection Function
+        document.addEventListener('DOMContentLoaded', () => {
+            const seats = document.querySelectorAll('.seats');
+
+            seats.forEach(seat => {
+                seat.addEventListener('click', () => {
+                    // Remove highlight from all seats
+                    seats.forEach(s => {
+                        s.classList.remove('highlighted');
+                    });
+
+                    // Highlight the clicked seat
+                    seat.classList.add('highlighted');
+
+                    // Extract seat number, row number, and section letter from IDs
+                    const seatId = seat.id.split('_')[1]; // Selecting the second element after splitting
+                    const rowId = seat.parentNode.id.split('_')[1]; // Selecting the second element after splitting
+                    const sectionLetter = seat.parentNode.parentNode.id.split('_')[1]; // Selecting the second element after splitting
+
+                    // Convert row ID to row number (assuming it starts from 1)
+
+                    // Determine section based on seat number
+                    const section = seatId <= 10 ? 'A' : 'B';
+                    // const seatInfo = `${sectionLetter},${rowId},${seatId}`;
+                    // const seatInfo = findName(sectionLetter, parseInt(rowId), parseInt(seatId));
+                    const seatInfo = findName(sectionLetter, parseInt(rowId), parseInt(seatId));
+                    // Access the section_search element
+                    const sectionSearchText = document.querySelector('.section_search_text');
+
+                    // Access the h1 element inside section_search
+                    const heading = sectionSearchText.querySelector('h1');
+
+                    // Replace the content of the h1 element with the seat information
+                    heading.textContent = seatInfo;
+
+                });
+            });
+        });
+        //CSV Data splitting
+        document.addEventListener('DOMContentLoaded', () => {
+            const seats = document.querySelectorAll('.seats');
+            seats.forEach(seat => {
+                // Remove highlight from all seats
+
+
+                // Highlight the clicked seat
+
+                // Extract seat number, row number, and section letter from IDs
+                const seatId = seat.id.split('_')[1]; // Selecting the second element after splitting
+                const rowId = seat.parentNode.id.split('_')[1]; // Selecting the second element after splitting
+                const sectionLetter = seat.parentNode.parentNode.id.split('_')[1]; // Selecting the second element after splitting
+
+                // Convert row ID to row number (assuming it starts from 1)
+
+                // Determine section based on seat number
+                const section = seatId <= 10 ? 'A' : 'B';
+                // const seatInfo = `${sectionLetter},${rowId},${seatId}`;
+                // const seatInfo = findName(sectionLetter, parseInt(rowId), parseInt(seatId));
+                const seatInfo = findName(sectionLetter, parseInt(rowId), parseInt(seatId));
+                // Access the section_search element
+                const fullName = seatInfo;
+
+                // Split the full name into an array of individual names
+                try {
+                    // Attempt to split the full name into an array of individual names
+                    namesArray = fullName.split(" ");
+                } catch (error) {
+                    // If an error occurs during splitting, handle it here
+                    console.error("Error occurred while splitting full name:", error);
+                    // Set namesArray to an empty array or any other appropriate value
+                    namesArray = ['', ''];
+                }
+
+                // Get the first name and last name
+                const firstName = namesArray[0];
+                const lastName = namesArray[namesArray.length - 1];
+
+                // Extract the first letter from each name to get the initials
+                const firstInitial = firstName[0];
+                const lastInitial = lastName[0];
+                const sectionSearchText = document.querySelector('.section_search_text');
+
+                // Access the h1 element inside section_search
+                const heading = sectionSearchText.querySelector('h1');
+                const firstInitialDiv = document.createElement('div');
+                firstInitialDiv.classList.add('initial_text', 'first_initial');
+                const lastInitialDiv = document.createElement('div');
+                lastInitialDiv.classList.add('initial_text', 'last_initial');
+                firstInitialDiv.textContent = firstInitial;
+                lastInitialDiv.textContent = lastInitial;
+                // Append initial text divs to seat div
+                seat.appendChild(firstInitialDiv);
+                seat.appendChild(lastInitialDiv);
+
+
+            });
+        });
+
+        //Synchronize Scrolling of row numbers and seating map
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select the section_map and section_row_numbers elements
+            const sectionMap = document.getElementById('section_map');
+            const sectionRowNumbers = document.getElementById('section_row_numbers');
+
+            // Add scroll event listener to section_map
+            sectionMap.addEventListener('scroll', () => {
+                // Synchronize the scrollLeft property of section_row_numbers with section_map
+                sectionRowNumbers.scrollLeft = sectionMap.scrollLeft;
+            });
+
+            // Add scroll event listener to section_row_numbers
+            sectionRowNumbers.addEventListener('scroll', () => {
+                // Synchronize the scrollLeft property of section_map with section_row_numbers
+                sectionMap.scrollLeft = sectionRowNumbers.scrollLeft;
+            });
+        });
+        //Synchronize Scrolling of Section Leters
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select sectionLetter and sectionMap elements
+            var sectionLetter = document.querySelector('.section_letter_1');
+            var sectionMap = document.querySelector('.section_map');
+            var scrolling = false
+            // Add event listener for scrolling on sectionMap
+            sectionMap.addEventListener("scroll", function () {
+                scrolling = true
+
+                // if (sectionMap.addEventListener("touchstart")) {                // Get the horizontal scroll position of sectionMap
+                var scrollLeftMap = sectionMap.scrollLeft;
+                // Calculate the total scrollable width of sectionMap
+                var totalScrollWidthMap = sectionMap.scrollWidth - sectionMap.clientWidth;
+
+                // Calculate the scroll percentage for sectionMap
+                var scrollPercentageMap = (scrollLeftMap / totalScrollWidthMap) * 100;
+
+                // Scroll sectionLetter based on scroll percentage
+                sectionLetter.scrollLeft = scrollPercentageMap > 50 ? totalScrollWidthMap : 0;
+                scrolling = false
+            });
+
+            // Add event listener for scrolling on sectionLetter
+            var startX = null;
+
+            sectionLetter.addEventListener("touchstart", function (event) {
+                startX = event.touches[0].clientX;
+            });
+
+            var startX = null;
+
+            sectionLetter.addEventListener("touchstart", function (event) {
+                startX = event.touches[0].clientX;
+            });
+
+            sectionLetter.addEventListener("touchmove", function (event) {
+                if (startX === null) {
+                    return;
+                }
+
+                var currentX = event.touches[0].clientX;
+                var diffX = startX - currentX;
+
+                if (diffX > 0) {
+                    // Swipe right
+                    sectionMap.scrollLeft += sectionMap.clientWidth; // Scroll sectionMap to the right by 100%
+                } else {
+                    // Swipe left
+                    sectionMap.scrollLeft -= sectionMap.clientWidth; // Scroll sectionMap to the left by 100%
+                }
+
+                startX = null;
+            });
+
+
+        });
+
+    </script>
+
+
+</body>
